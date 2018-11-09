@@ -28,7 +28,7 @@ for clutterLoop = 1:length(clutterVersion)
         save('performance','IMM_TP','IMM_RMS');        
     end
     for yawDevRateLoop = yawDevRateLoopMin:yawDevRateLoopJump:yawDevRateLoopMax
-    totalSim = 3;
+    totalSim = 500;
     if yawDevRateLoop == yawDevRateLoopMin
         DataStore = Init_Data_Store(totalSim,nYaw-nYawStart);
     end
